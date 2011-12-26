@@ -24,6 +24,22 @@
       <li><a href="/about/">About</a></li>
     </ul>
   </nav>
+  <div id="filters">
+    <ul>
+      <li>Filters</li>
+      <li>-----------</li>
+      <li><a data-filter=".2011" href="#filter=.2011">2011</a></li>
+      <li><a data-filter=".2010" href="#filter=.2010">2010</a></li>
+      <li><a data-filter=".2009" href="#filter=.2009">2009</a></li>
+      <li>-----------</li>
+      <li><a data-filter=".video" href="#filter=.video">Video</a></li>
+      <li><a data-filter=".web" href="#filter=.web">Web</a></li>
+      <li><a data-filter=".animation" href="#filter=.animation">Animation</a></li>
+      <li><a data-filter=".interactive" href="#filter=.interactive">Interactive</a></li>
+      <li>-----------</li>
+      <li><a data-filter="*" href="#filter=*" id="all">Show All</a></li>
+    </ul>
+</div>
 </header>
 <div id="main" role="main">
 {{ content }}
@@ -35,7 +51,9 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+<script src="/js/libs/jquery.isotope.min.js"></script>
+<script src="/js/libs/jquery.bbq.min.js"></script>
 
 <script defer src="/js/plugins.js"></script>
 <script defer src="/js/script.js"></script>
