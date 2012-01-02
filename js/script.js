@@ -67,7 +67,7 @@ $(function() {
 
   $('#back').click(function(event) {
     event.preventDefault();
-    var rgx = '/cgrune/i';
+    var rgx = /cgrune/i;
     if(document.referrer == undefined || document.referrer == "" || !document.referrer.match(reg))
       { window.location = window.location.origin; }
     else
