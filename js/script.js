@@ -68,9 +68,7 @@ $(function() {
   $('#back').click(function(event) {
     event.preventDefault();
     var rgx = '/cgrune/i';
-    if(document.ref == undefined)
-      { window.location = window.location.origin; }
-    else if(!document.ref.match(reg))
+    if(document.ref == undefined || "" || !document.ref.match(reg))
       { window.location = window.location.origin; }
     else
       { window.history.back(); }
