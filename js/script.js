@@ -67,7 +67,13 @@ $(function() {
 
   $('#back').click(function(event) {
     event.preventDefault();
-    window.history.back();
+    var rgx = '/cgrune/i';
+    if(document.ref == undefined)
+      { window.location = window.location.origin; }
+    else if(!document.ref.match(reg))
+      { window.location = window.location.origin; }
+    else
+      { window.history.back(); }
   });
 
   /***********************/
