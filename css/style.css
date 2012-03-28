@@ -261,6 +261,27 @@ div.projects span.date {
   margin: 0 0 40px 0;
 }
 
+/*** Posts ***/
+
+.content #post ul {
+  list-style-type: square;
+  font-size: 16px;
+}
+
+  .content #post ul li {
+    padding: 0 0 10px 0;
+    line-height: 1.4;
+  }
+
+.content #post div.img-cont {
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+  .content #post div.img-cont img {
+    max-height: 100%;
+  }
+
 /*** About Page ***/
 div#about {
   margin: 20px 0 0 0;
