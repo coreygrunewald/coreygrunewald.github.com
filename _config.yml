@@ -1,4 +1,4 @@
-auto: false
+auto: true
 safe: true
 lsi: false
 pygments: true
