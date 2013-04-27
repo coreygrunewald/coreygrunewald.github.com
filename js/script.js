@@ -1,16 +1,8 @@
 $(function() {
 
-  /***********************/
-  /******* PROJECTS ******/
-  /***********************/
-
   $('div.projects').click(function(){
     window.location = this.getAttribute("data-pathway");
   });
-
-  /***********************/
-  /******* ISOTOPE ******/
-  /***********************/
 
   switch($('body').attr('id'))
   {
@@ -18,7 +10,7 @@ $(function() {
       iso('.projects');
       break;
     case "writing":
-      iso('.article')
+      iso('.article');
       break;
   }
 
@@ -29,14 +21,14 @@ $(function() {
       $container.imagesLoaded( function(){
         $container.isotope({
           animationEngine: 'best-available',
-          itemSelector: selector,
+          itemSelector: selector
         });
       });
       $(window).bind( 'hashchange', function( event ){
         // get options object from hash
         var hashOptions = $.deparam.fragment();
         $('#filters a.selected').removeClass('selected');
-        if(hashOptions.filter == null){ $container.isotope({ filter: "*" }); }
+        if(hashOptions.filter === null){ $container.isotope({ filter: "*" }); }
         else {
           $('#filters').find("[data-filter='"+hashOptions.filter+"']").addClass('selected');
           // apply options from hash
@@ -48,10 +40,6 @@ $(function() {
     });
   }// end function iso
 
-  /***********************/
-  /******* FILTERS *******/
-  /***********************/
-
   $('#filters a').click(function(){
     $('#filters a.selected').removeClass('selected');
     $(this).addClass('selected');
@@ -61,22 +49,14 @@ $(function() {
     return false;
   });
 
-  /***********************/
-  /***** BACK BUTTON *****/
-  /***********************/
-
   $('#back').click(function(event) {
     event.preventDefault();
     var rgx = /cgrune/i;
-    if(document.referrer == undefined || document.referrer == "" || !document.referrer.match(rgx))
+    if(document.referrer === undefined || document.referrer === "" || !document.referrer.match(rgx))
       { window.location = window.location.origin; }
     else
       { window.history.back(); }
   });
-
-  /***********************/
-  /****** VIMEO API ******/
-  /***********************/
 
   // Listen for the ready event for any vimeo video players on the page
   var vimeoPlayers = document.querySelectorAll('iframe'), player;
