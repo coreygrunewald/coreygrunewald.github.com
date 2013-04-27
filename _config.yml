@@ -1,9 +1,9 @@
-auto: true
+auto: false
 safe: true
 lsi: false
 pygments: true
 markdown: rdiscount
-permalink: /:year/:month/:day/:title
 rdiscount:
   extensions: [smart]
+permalink: /:year/:month/:day/:title
 baseurl: /
