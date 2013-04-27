@@ -1,4 +1,7 @@
 auto: true
+safe: true
+lsi: false
+pygments: true
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
 rdiscount:

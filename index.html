@@ -6,15 +6,15 @@ bodyid: root
 
 {% for post in site.categories.projects %}
 <div data-pathway="{{post.url}}" class="{% for item in post.categories %}{{ item }} {% endfor %}{{ post.date | date: '%Y' }}">
-  <div class="project-meta">
-    <span class="title">{{ post.title }}</span>
-    <span class="date">{{ post.date | date: "%Y" }}</span>
-  </div>
-  <img src="{{ post.thumbnail }}" alt="{{ post.title}}" />
-  <ul id="tags">
-  {% for item in post.displaytag %}
-    <li>{{ item }}</li>
-  {% endfor %}
-  </ul>
+<div class="project-meta">
+<span class="title">{{ post.title }}</span>
+<span class="date">{{ post.date | date: "%Y" }}</span>
+</div>
+<img src="{{ post.thumbnail }}" alt="{{ post.title}}" />
+<ul id="tags">
+{% for item in post.displaytag %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
 </div>
 {% endfor %}
