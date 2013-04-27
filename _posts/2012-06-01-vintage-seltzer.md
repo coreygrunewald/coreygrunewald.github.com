@@ -2,7 +2,7 @@
 layout: project
 title: Vintage Seltzer
 bodyid: project
-categories: [projects,web]
+categories: [projects, web]
 permalink: /projects/vintage-seltzer/
 thumbnail: /img/projects/vintage-seltzer/thumbnail.jpg
 displaytag:

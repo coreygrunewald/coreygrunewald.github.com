@@ -2,7 +2,7 @@
 layout: project
 title: Michele Seippel
 bodyid: project
-categories: [projects,web]
+categories: [projects, web]
 permalink: /projects/ms/
 thumbnail: /img/projects/ms/thumbnail.jpg
 displaytag:
