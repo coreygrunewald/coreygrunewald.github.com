@@ -3,7 +3,7 @@ layout: project
 title: Vintage Seltzer
 bodyid: project
 categories: [projects,web]
-permalink: /projects/vintage-seltzer/
+permalink: /projects/vintage/
 thumbnail: /img/projects/vintage-seltzer/thumbnail.jpg
 displaytag:
 - web
