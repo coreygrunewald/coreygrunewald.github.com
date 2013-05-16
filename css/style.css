@@ -1,7 +1,3 @@
-/* HTML5 ✰ Boilerplate
- * ==|== normalize ==========================================================
- */
-
 @font-face {
     font-family: 'InconsolataMedium';
     src: url('/fonts/Inconsolata-webfont.eot');
@@ -14,8 +10,7 @@
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; } audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -91,10 +86,6 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
-/* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
-
 body {
   background-color: #D2E1EC;
   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAP0lEQVQYGWO89PDNfwYCgImAPMOHh9cY8CoCKRCQ18KvCKQABLCaBDIBGWAoglmBVxHMCqyK0K3AUITNCmRFALsIFVdYDrVnAAAAAElFTkSuQmCC) repeat fixed;
@@ -147,8 +138,8 @@ header nav ul li a:hover {
 footer {
   height: 40px;
   position: relative;
-	margin-top: -41px; /* negative value of footer height */
-	clear:both;
+  margin-top: -41px; /* negative value of footer height */
+  clear:both;
   background: #F0F0F0;
   border-top: 1px solid #CCC;
 }
@@ -319,6 +310,96 @@ div.highlight pre {
   margin: 0 0 40px 0;
 }
 
+/*** Resume ***/
+
+body#resume {
+  background: white;
+  font-family: 'Ubuntu Mono',Inconsolata,Helvetica,Arial,sans-serif;
+  word-spacing: 0.3 em;
+  font-size: 100%;
+}
+#resume #container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto 40px auto;
+}
+#resume h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+#resume h1 {
+  text-transform: uppercase;
+  font-size: 300%;
+}
+#resume h2 {
+  font-size: 225%;
+  font-weight: light;
+}
+#resume hr {
+  border-top: 3px solid #82add9;
+}
+#resume #title {
+  margin: 40px 2% 0 0;
+  float: left;
+  width: 48%;
+}
+#resume #title h1 {
+  height: 40px;
+  line-height: 40px;
+}
+#resume #title #contact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+#resume #title #location {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+  text-align: right;
+}
+#resume #objective {
+  margin: 40px 0 0 2%;
+  float: left;
+  width: 48%;
+}
+#resume #objective h2 {
+  height: 40px;
+  line-height: 40px;
+}
+
+#resume #education,
+#resume #experience,
+#resume #awardsRecognition,
+#resume #skills {
+  margin: 20px 0 0 0;
+}
+#resume #skills {
+  padding-bottom: 40px;
+}
+#resume ul li {
+  padding: 0 0 10px 0;
+}
+#resume ul li sup {
+  font-weight: bold;
+  font-style: italic;
+}
+#resume ul.half-list {
+  float: left;
+  width: 50%;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+#resume ul.fifths-list {
+  float: left;
+  width: 20%;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+
+
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
@@ -333,15 +414,6 @@ div.highlight pre {
 
 /* ==|== media queries ====================================================== */
 
-@media only screen and (min-width: 480px) {
-
-
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
 @media only screen and (max-width: 1160px) {
   #main {
     margin: 0 20px 0 130px;
@@ -351,6 +423,55 @@ div.highlight pre {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1159px) {
+  #resume #title h1 {
+    font-size: 200%;
+  }
+  #resume h2 {
+    font-size: 175%;
+  }
+  #resume #title #location {
+    float: none;
+    clear: left;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #resume #title h1 {
+    font-size: 150%;
+  }
+  #resume h2 {
+    font-size: 150%;
+  }
+  #resume #title #location {
+    float: none;
+    clear: left;
+    text-align: left;
+  }
+  #resume ul.fifths-list {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { 
+  #resume #title h1 { 
+    font-size: 140%;
+  }
+  #resume h2 {
+    font-size: 140%;
+  }
+  #resume #title #location {
+    float: none;
+    clear: left;
+    text-align: left;
+  }
+  #resume ul.fifths-list {
+    float: none;
+    width: 100%;
+  }
+}
 /* ==|== print styles ======================================================= */
  
 @media print {
