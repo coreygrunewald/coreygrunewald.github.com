@@ -1,6 +1,6 @@
 ---
 layout: post
-title: emacs: evil keybindings for git-timemachine
+title: emacs & evil - keybindings for git timemachine
 bodyid: post
 categories: writings
 tags: [emacs, code, git]
